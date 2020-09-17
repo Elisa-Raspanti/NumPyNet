@@ -284,7 +284,7 @@ if __name__ == '__main__':
     num_samples, size, _ = X.shape
     X = X.reshape(num_samples, 1, 1, size)
 
-    layer = SimpleRNN_layer(outputs=10, steps=steps, activation=activations.Linear())#, input_shape=X.shape)
+    layer = SimpleRNN_layer(outputs=10, steps=steps, activation=activations.Linear(), input_shape=X.shape)
 
     print(layer)
 
